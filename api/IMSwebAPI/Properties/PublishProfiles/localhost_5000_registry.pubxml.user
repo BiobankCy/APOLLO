@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <History>False|2023-02-03T10:10:22.8407249Z;False|2023-02-03T12:09:27.5121993+02:00;</History>
+    <LastFailureDetails>2023-02-03T10:10:22.8407249Z|checkContainerPrereq</LastFailureDetails>
+  </PropertyGroup>
+</Project>

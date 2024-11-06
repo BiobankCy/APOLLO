@@ -1,0 +1,122 @@
+import React from "react";
+import {
+  TableContainer,
+  Table,
+  TableHead,
+  TableRow,
+  TableCell,
+  TableBody,
+  TablePagination,
+  Paper,
+  TableFooter,
+} from "@mui/material";
+ 
+import { ReportForOrdersModel, ReportForOrdersModelHead } from "../Models/AllInterfaces";
+import { ccyFormat, customDateFormat } from "src/models/mymodels";
+ 
+
+interface StockReportProps {
+  data: ReportForOrdersModelHead;  
+}
+
+const ExpenditureByInvoice: React.FC<StockReportProps> = ({ data }) => {
+  const [page, setPage] = React.useState(0);
+  const [rowsPerPage, setRowsPerPage] = React.useState(100);
+
+  const handleChangePage = (
+    event: React.MouseEvent<HTMLButtonElement> | null,
+    newPage: number,
+  ) => {
+    setPage(newPage);
+  };
+
+  const handleChangeRowsPerPage = (
+    event: React.ChangeEvent<HTMLInputElement>,
+  ) => {
+    setRowsPerPage(parseInt(event.target.value, 10));
+    setPage(0);
+  };
+
+  const slicedData = data.rows.slice(
+    page * rowsPerPage,
+    page * rowsPerPage + rowsPerPage,
+  );
+
+  return (
+
+    <Paper >
+       
+    <TableContainer style={{ overflow: "auto", maxHeight: "400px" }}>
+        <Table>
+          <TableHead>
+            <TableRow>
+              {/* <TableCell>Supplier ID</TableCell> */}
+              <TableCell>Invoice</TableCell>
+              <TableCell>Date</TableCell>
+              <TableCell>Supplier ID</TableCell>
+              <TableCell>Supplier</TableCell>
+              <TableCell align="right">Total Amount (VAT Excluded)</TableCell>
+              <TableCell align="right">Total VAT Amount</TableCell>
+              <TableCell align="right">Total Amount (VAT Included)</TableCell> 
+
+              <TableCell align="right">Shipping Amount (VAT Excluded)</TableCell>
+              <TableCell align="right">Shipping VAT Amount</TableCell>
+              <TableCell align="right">Shipping Amount (VAT Included)</TableCell> 
+            
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {slicedData.map((item, index) => (
+              <TableRow key={index}>
+                 {/* <TableCell>{item.supplierid}</TableCell> */}
+                <TableCell>{item.invno}</TableCell>
+                <TableCell>{ customDateFormat(item.invdate, "DateOnly")}</TableCell>
+                <TableCell>{item.supplierid}</TableCell>
+                <TableCell>{item.suppliername}</TableCell>
+                <TableCell align="right">  {ccyFormat(item.totalamountVatExcluded)}</TableCell>
+                <TableCell align="right">  {ccyFormat(item.totalVatAmount)} </TableCell>
+                <TableCell align="right">  {ccyFormat(item.totalamountVatIncluded)}</TableCell>
+                <TableCell align="right">  {ccyFormat(item.totalInvshippingamountVatExcluded)}</TableCell>
+                <TableCell align="right">  {ccyFormat(item.totalInvshippingVATamount)}</TableCell>
+                <TableCell align="right">  {ccyFormat(item.totalInvshippingamountVatIncluded)}</TableCell>
+              
+            
+                
+              </TableRow>
+            ))}
+          </TableBody>
+          <TableFooter sx={{ backgroundColor: "#f0f0f0"}} > 
+            <TableRow>
+              <TableCell align="right" colSpan={4}>
+                Totals:
+              </TableCell>
+              <TableCell align="right">  {ccyFormat(data.totalsline.totalamountVatExcluded)}</TableCell>
+                <TableCell align="right">  {ccyFormat(data.totalsline.totalVatAmount)} </TableCell>
+                <TableCell align="right">  {ccyFormat(data.totalsline.totalamountVatIncluded)}</TableCell>
+                <TableCell align="right">  {ccyFormat(data.totalsline.totalInvshippingamountVatExcluded)}</TableCell>
+                <TableCell align="right">  {ccyFormat(data.totalsline.totalInvshippingVATamount)}</TableCell>
+                <TableCell align="right">  {ccyFormat(data.totalsline.totalInvshippingamountVatIncluded)}</TableCell>
+            </TableRow>
+          </TableFooter>
+        </Table>
+      </TableContainer>
+      <TablePagination
+      sx={{ backgroundColor: "#e0e0e0"}} 
+        rowsPerPageOptions={[25, 50, 100]}
+        component="div"
+        count={data.rows.length}
+        rowsPerPage={rowsPerPage}
+        page={page}
+        onPageChange={handleChangePage}
+        onRowsPerPageChange={handleChangeRowsPerPage}
+      />
+    </Paper>
+   
+
+
+ 
+   
+  );
+};
+
+export default ExpenditureByInvoice;

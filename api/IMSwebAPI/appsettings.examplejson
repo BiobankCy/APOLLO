@@ -1,0 +1,35 @@
+{
+  "JwtAuth": {
+    "Key": "NzhmMjFhNzYzOTY4Nzc2M1Q4NzU2NTQyMjk4NjAwZjM3MjIxOWI1Nzc5YmU2YmQ2M2E2NjI0MjJcNDAzN2RmZA==",
+    "Issuer": "trackntraceimsapplication"
+  },
+  "JwtAuth2": {
+    "Key": "03+uCfiWWsdEG4mmRwwxZlIutlpjXJiqrZ44R6Y8xKw=",
+    "Issuer": "trackntraceimsapplication"
+  },
+  "ConnectionStrings": {
+    "MariaDbConnectionString": "server=localhost;port=3306;user=root;password=yourpasshere;TreatTinyAsBoolean=true; database=ims_webappdb"
+
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+,
+   
+  "Kestrel": {
+    "EndPoints": {
+      "Https": {
+        "Url": "https://+:443",
+        "Certificate": {
+          "Path": "/app/server.crt",
+          "KeyPath": "/app/server.key"
+        }
+      }
+    }
+  }
+}
+
