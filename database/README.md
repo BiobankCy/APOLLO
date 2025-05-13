@@ -1,10 +1,10 @@
-# Database Setup for TrackNTraceIMS
+# Database Setup for APOLLO
 
-This directory contains the initial database structure for the TrackNTraceIMS (Inventory Management System) project.
+This directory contains the initial database structure for the APOLLO (Inventory Management System) project.
 
 ## File
 
-- **trackntraceims_emptydb.sql**: This file contains the schema for the TrackNTraceIMS database. It includes table definitions but no data, allowing you to set up a fresh database.
+- **apollo_ims_emptydb.sql**: This file contains the schema for the APOLLO database. It includes table definitions but no data, allowing you to set up a fresh database.
 
 ## Usage Instructions
 
@@ -22,13 +22,13 @@ To use this file to create an empty database structure:
 3. Create a new database (if not already created):
 
    ```sql
-   CREATE DATABASE trackntraceims;
+   CREATE DATABASE apolloims;
    ```
 
 4. Import the database structure:
 
    ```bash
-   mysql -u username -p trackntraceims < path/to/trackntraceims_emptydb.sql
+   mysql -u username -p trackntraceims < path/to/apollo_ims_emptydb.sql
    ```
 
    Replace `path/to/` with the actual path to this file.
