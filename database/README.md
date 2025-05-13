@@ -28,12 +28,12 @@ To use this file to create an empty database structure:
 4. Import the database structure:
 
    ```bash
-   mysql -u username -p trackntraceims < path/to/apollo_ims_emptydb.sql
+   mysql -u username -p apolloims < path/to/apollo_ims_emptydb.sql
    ```
 
    Replace `path/to/` with the actual path to this file.
 
-This will set up the `trackntraceims` database with the necessary tables but no data.
+This will set up the `APOLLO` database with the necessary tables but no data.
 
 ## Notes
 
