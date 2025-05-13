@@ -35,8 +35,43 @@ Below are examples of the primary screens and dialogs in the **APOLLO** Web Appl
 
 ---
 
-### Products (Catalog Items)
-![APOLLO “Products” catalog view](demo/screenshots/products.png)
+### Catalog
+![Products catalog view](demo/screenshots/products.png)  
+![Product categories & subcategories](demo/screenshots/product-categories-subcategories.png)  
+![Filtering & search within Products](demo/screenshots/products-filtering-requests-orders.png)  
+
+
+---
+
+### Inventory Management
+![Inventory locations map/list](demo/screenshots/inventory-locations.png)  
+![Inventory lots overview](demo/screenshots/inventory-lots.png)  
+![Adjust inventory quantities](demo/screenshots/inventory-adjustment.png)  
+![Inventory transactions history](demo/screenshots/inventory-transactions.png)  
+![Transfer stock between locations](demo/screenshots/inventory-transfer.png)  
+![Analysis of a product’s inventory](demo/screenshots/inventory-analysis-of-product.png)  
+
+---
+
+### Requests
+![Request list for products](demo/screenshots/request-list.png)
+![Products request popup](demo/screenshots/products-request-popup.png)
+![Primers request popup](demo/screenshots/primer-request.png)
+
+---
+
+### Ordering & Receiving
+![Order list & statuses](demo/screenshots/orders.png)  
+![Receive goods into inventory](demo/screenshots/order-receiving.png)  
+
+---
+
+### Procurement & Reporting & Overview & Administration
+![System users & permissions](demo/screenshots/system-users.png)  
+![Project list & details](demo/screenshots/projects.png) 
+![Tender list & details](demo/screenshots/tenders.png) 
+![Reports  & filters](demo/screenshots/reports.png)  
+![Supplier management](demo/screenshots/suppliers.png)  
 
 ## Docker
 The project includes Docker support to simplify the setup for both the API and frontend.
