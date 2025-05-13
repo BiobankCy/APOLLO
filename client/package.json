@@ -1,5 +1,5 @@
 {
-  "name": "trackandflowims-client-ts",
+  "name": "apolloims-client-ts",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
