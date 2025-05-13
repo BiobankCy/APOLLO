@@ -1,6 +1,6 @@
-# TrackNFlowIMS Project
+# APOLLO Project
 
-**TrackNFlowIMS** is a modern web application consisting of a **C# RESTful API** backend and a **React (TypeScript)** frontend. This project is designed for organizations that need efficient tracking and flow management of their inventory.
+**APOLLO** is a modern web application consisting of a **C# RESTful API** backend and a **React (TypeScript)** frontend. This project is designed for organizations that need efficient tracking and flow management of their inventory.
 
 ## Project Structure
 
