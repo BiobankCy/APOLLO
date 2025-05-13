@@ -38,7 +38,7 @@ Below are examples of the primary screens and dialogs in the **APOLLO** Web Appl
 ### Catalog
 ![Products catalog view](demo/screenshots/products.png)  
 ![Product categories & subcategories](demo/screenshots/product-categories-subcategories.png)  
-![Filtering & search within Products](demo/screenshots/products-filtering-requests-orders.png)  
+![Filtering & search within Products](demo/screenshots/products-filtering-requests-order.png)  
 
 
 ---
