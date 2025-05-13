@@ -30,6 +30,14 @@ Make sure you have the following installed on your machine:
 ## Running the Project
 To Be Added (TBA)
 
+## UI Overview
+Below are examples of the primary screens and dialogs in the **APOLLO** Web Application.
+
+---
+
+### Products (Catalog Items)
+![APOLLO “Products” catalog view](demo/screenshots/products.png)
+
 ## Docker
 The project includes Docker support to simplify the setup for both the API and frontend.
 
