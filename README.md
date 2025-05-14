@@ -80,22 +80,25 @@ Below are examples of the primary screens and dialogs in the **APOLLO** Web Appl
 ![Receive goods into inventory](demo/screenshots/order-receiving.png)  
 *Form for logging received shipments: enter received quantities, link to a supplier invoice (number, date, and amounts), upload the PDF invoice for paperless records, and have stock levels update automatically.*
 
-![Primer request popup](demo/screenshots/primer-request.png)  
-*Request form for custom primer orders—manually enter individual sequences or batch-import from an Excel file, specify quantities, assign to a project, and add optional comments.*
-
 ---
 
 ### Requests
 
-![Request list for products](demo/screenshots/request-list.png)  
-*Comprehensive table of reagent and material requests—includes column filters, inline status updates, approval status, estimated cost, submitting user, approver, request date, and quick-action buttons.*
-
 ![Products request popup](demo/screenshots/products-request-popup.png)  
 *Popup form to submit new product requests, set urgency, and optionally assign to a project.*
+
+![Primer request popup](demo/screenshots/primer-request.png)  
+*Request form for custom primer orders—manually enter individual sequences or batch-import from an Excel file, specify quantities, assign to a project, and add optional comments.*
+
+![Request list for products](demo/screenshots/request-list.png)  
+*Comprehensive table of reagent and material requests—includes column filters, inline status updates, approval status, estimated cost, submitting user, approver, request date, and quick-action buttons.*
 
 ---
 
 ### Procurement & Planning
+
+![Supplier management](demo/screenshots/suppliers.png)  
+*List of suppliers with contact details and country, featuring a toggle to include an Excel attachment directly in the email when placing a purchase order.*
 
 ![Tender list & details](demo/screenshots/tenders.png)  
 *Overview of tenders with budget usage bars and expandable product line-items.*
@@ -106,9 +109,6 @@ Below are examples of the primary screens and dialogs in the **APOLLO** Web Appl
 ---
 
 ### Administration
-
-![Supplier management](demo/screenshots/suppliers.png)  
-*List of suppliers with contact details and country, featuring a toggle to include an Excel attachment directly in the email when placing a purchase order.*
 
 ![System users & permissions](demo/screenshots/system-users.png)  
 *Admin view of all user accounts, roles, and approver assignments.*
