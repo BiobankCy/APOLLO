@@ -37,6 +37,16 @@ Below are examples of the primary screens and dialogs in the **APOLLO** Web Appl
 
 ---
 
+### Dashboard (Landing Page)
+
+![Landing dashboard](demo/screenshots/landing-dashboard.png)  
+*Landing dashboard displaying:  
+- Pending decisions count and “Make a Decision” / “Add New Request” actions (buttons shown only to users with the appropriate approval/request permissions)  
+- Year-to-date request totals, broken down by status (approved, cancelled, and rejected) 
+- Bar charts comparing this-month vs. previous-month orders (Plastics & Reagents)  
+- Low-stock product cards showing code, available vs. minimum quantities, and quick “Order Now” / “Edit” buttons (visible only to users authorized to place orders or edit product)*
+---
+
 ### Catalog
 
 ![Products catalog view](demo/screenshots/products.png)  
