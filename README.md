@@ -75,7 +75,7 @@ Below are examples of the primary screens and dialogs in the **APOLLO** Web Appl
 ### Ordering & Receiving
 
 ![Order list & statuses](demo/screenshots/orders.png)  
-*Detailed purchase orders list for the selected product, showing supplier, order date, requesting user, and receipt status (fully, partially, or not yet received), with quick-action buttons for receiving items and accessing related supplier invoices.*
+*Comprehensive list of purchase order lines showing product code and description, supplier, order date, requesting user, quantity ordered, and receipt status (fully, partially, or pending), with quick-action buttons for logging receipts and accessing related supplier invoices.*
 
 ![Receive goods into inventory](demo/screenshots/order-receiving.png)  
 *Form for logging received shipments: enter received quantities, link to a supplier invoice (number, date, and amounts), upload the PDF invoice for paperless records, and have stock levels update automatically.*
