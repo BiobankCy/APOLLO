@@ -1,5 +1,7 @@
 # APOLLO Project
 
+**APOLLO (Advanced Platform for Open Labs, Logistics, and Operations)** is an open-source, FAIR-compliant laboratory inventory and compliance management system developed by biobank.cy. Designed for biomedical research environments, APOLLO helps labs track reagents, manage safety documentation (e.g., SDS), monitor stock levels, and align with ISO/GLP standards. It promotes reproducibility, audit readiness, and operational transparency—making advanced lab management accessible to all.
+
 **APOLLO** is a modern web application consisting of a **C# RESTful API** backend and a **React (TypeScript)** frontend. This project is designed for organizations that need efficient tracking and flow management of their inventory.
 
 ## Project Structure
